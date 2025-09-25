@@ -1,0 +1,335 @@
+/* General styles */
+/* Default style for body */
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(120deg, #f4f4f4 60%, #e0e7ff 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #333333 60%, #4f8cff 100%);
+    color: #fff;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 5px solid #4f8cff; /* Accent border */
+    border-bottom: 5px solid #4f8cff;
+}
+
+header h1 {
+    margin-top: 10px; /* Adjust spacing below profile image */
+    font-size: 2.8em; /* Larger heading */
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Shadow on text */
+}
+
+.profile-image {
+    width: 140px; /* Larger image */
+    height: 140px; /* Larger image */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff; /* White border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+/* Navigation styles */
+nav {
+    background: #444;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #555; /* subtle border */
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px; /* More spacing between links */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    display: inline-block;
+    padding: 5px 0; /* Vertical padding for hover effect */
+}
+
+nav a:hover {
+    color: #8cc6ff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 50px 40px; /* More padding */
+    max-width: 900px; /* Wider content area */
+    margin: 60px auto; /* Increased top/bottom margin */
+    background: #fff;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 8px 30px rgba(79, 140, 255, 0.1); /* Deeper shadow for depth*/
+    border: 1px solid #e0e7ff; /* Subtle border */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #4f8cff; /* Accent color for subheadings */
+    border-bottom: 2px solid #e0e7ff; /* Underline for subheadings */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* Paragraphs and lists */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+ul li {
+    background: #f7faff;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #e0e7ff; /* Subtle border */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(79, 140, 255, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Icons within lists (Hobbies and Skills) */
+.hobby-icon, .skill-icon {
+    width: 28px; /* Consistent icon size */
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 15px; /* Increased spacing */
+    filter: invert(30%) sepia(80%) saturate(1500%) hue-rotate(200deg) brightness(90%) contrast(90%); /* Tint icons blue */
+}
+
+/* Contact Page Specifics */
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling (Contact Page) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Consistent spacing */
+    background: #f7faff;
+    padding: 30px; /* More padding */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(79,140,255,0.08);
+    border: 1px solid #e0e7ff;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px; /* More padding for inputs */
+    border-radius: 8px; /* Slightly more rounded */
+    border: 1px solid #b3c6ff;
+    font-size: 1em;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4f8cff; /* Highlight on focus */
+    box-shadow: 0 0 0 3px rgba(79,140,255,0.2); /* Soft glow */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 120px; /* Minimum height for textarea */
+}
+
+button {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 14px 20px; /* More padding for button */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+button:hover {
+    background: #333;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 30px; /* Increased margin for separation */
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e7ff; /* Separator line */
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 12px; /* More spacing between icons */
+    color: #4f8cff;
+    font-size: 1.8em; /* Larger icons */
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #333;
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.social-links img {
+    width: 38px; /* Consistent image size for social icons */
+    height: 38px;
+    vertical-align: middle;
+    filter: invert(30%) sepia(80%) saturate(1500%) hue-rotate(200deg) brightness(90%) contrast(90%); /* Tint icons blue */
+    transition: filter 0.2s ease;
+}
+
+.social-links a:hover img {
+    filter: invert(15%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Change to dark on hover */
+}
+
+/* Image Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 25px; /* Increased spacing between images */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    width: 200px; /* Fixed width for each image container */
+    height: 150px; /* Fixed height for each image container */
+    overflow: hidden; /* Hide overflow if image is larger */
+    border-radius: 12px;
+    border: 3px solid #e0e7ff; /* Consistent border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05) translateY(-5px); /* Zoom and lift effect */
+    box-shadow: 0 8px 20px rgba(79,140,255,0.2);
+    border-color: #4f8cff; /* Highlight border on hover */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    display: block; /* Remove extra space below image */
+}
+
+/* Floating for images and content (example for future use, not directly applied to current layout) */
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Clearfix to fix layout issues with floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive adjustments (basic example) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+    main {
+        margin: 30px auto;
+        padding: 30px 20px;
+    }
+    .gallery-item {
+        width: 150px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        display: block; /* Stack links vertically on small screens */
+        margin: 8px 0;
+    }
+    main {
+        padding: 20px 15px;
+    }
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    .social-links a {
+        font-size: 1.5em;
+        margin: 0 8px;
+    }
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+    .gallery-item {
+        width: 120px;
+        height: 90px;
+        gap: 15px;
+    }
+}
