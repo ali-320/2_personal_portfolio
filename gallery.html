@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Image Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #333; color: #fff; padding: 20px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 30px; max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { margin-top: 0; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .gallery img { width: 160px; height: 120px; object-fit: cover; border-radius: 8px; border: 2px solid #ccc; background: #eee; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Image Gallery</a>
+        <a href="skills.html">Personal Skills</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <main>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 1">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 2">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 3">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 4">
+            <img src="https://t3.ftcdn.net/jpg/16/80/93/28/360_F_1680932890_E6z1ZTAcJZW5wGQuhSPa3KWiO77Het6z.jpg" alt="Gallery Image 5">
+            
+        </div>
+        <p style="text-align:center; color:#888;">(Images from Unsplash. Replace with your own if desired.)</p>
+    </main>
+</body>
+</html>
